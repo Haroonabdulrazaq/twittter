@@ -15,6 +15,13 @@
         <p class="notice"><% notice %></p>
         </div> 
   <% end %>
+
+  <% if flash[:alert]%>
+  <div class="notification is-danger global-notification ">
+  <p class="alert"><% alert %></p>
+  </div> 
+<% end %>
+
     <%= yield %>
   </body>
 </html>

@@ -26,6 +26,20 @@
                     <small></small>
                     <p><%= tweeet.tweeet %></p>
                 </div>
+
+                <nav class="level">
+                    <div class="level-left is-mobile">
+                        <%= link_to tweeet, class: "level-item" do%>
+                            <span class="icon"><i class="fa fa-link" arial-hidden="true"></i></span>
+                        <% end %>
+                        <%= link_to edit_tweeet_path(tweeet), class: "level-item" do%>
+                            <span class="icon"><i class="fa fa-pencil" arial-hidden="true"></i></span>
+                        <% end %>
+                        <%= link_to tweeet, method: :delete, data: {confirm: "Are you sure you want to delete this tweet?"} do %>
+                              <span class="icon"><i class="fa fa-trash-o" arial-hidden="true"></i></span>
+                        <% end %>
+                    </div>
+                </nav>
             </div>
         </article>
     </div>

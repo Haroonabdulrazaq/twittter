@@ -1,22 +1,10 @@
-<%= form_with(model: tweeet, local: true) do |form| %>
-  <% if tweeet.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(tweeet.errors.count, "error") %> prohibited this tweeet from being saved:</h2>
-
-      <ul>
-      <% tweeet.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+<%= simple_form_for(@tweeet) do |f|%>
+<%f.error_notification %>
   <div class="field">
-    <%= form.label :tweeet %>
-    <%= form.text_area :tweeet %>
+    <div class="control">
+      <%=f.input :tweeet, label: "New Tweeet", input_html: {class:"textarea"}, wrapper: false, 
+      lable_html: {class: "label"}, placeholder: "Compose new tweet"%>
+    </div>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= f.button :submit, class: "button is-info"%>
 <% end %>

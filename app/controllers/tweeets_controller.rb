@@ -5,7 +5,7 @@ class TweeetsController < ApplicationController
   # GET /tweeets
   # GET /tweeets.json
   def index
-    @tweeets = Tweeet.all
+    @tweeets = Tweeet.all()
     @tweeet = Tweeet.new
   end
 

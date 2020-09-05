@@ -1,5 +1,7 @@
  <div class="column is-half">
+ <% if user_signed_in? %>
  <%= render 'form' %>
+ <% end %>
 
 <% @tweeets.each do |tweeet| %>
     <div class="box">
@@ -11,11 +13,11 @@
             </div>
             <div class="media-content">
                 <div class="content">
-                    <strong ><%= tweeet.user.username %></strong></br>
+                    <strong ><%= tweeet.user.name %></strong></br>
                     <small class="has-text-info"><%= tweeet.user.email %></small>
-                     <p><%= tweeet.tweeet %> </p>   
+                    <p><%= tweeet.tweeet %> </p>   
                 </div>
-
+            <% if user_signed_in? %>
                 <nav class="level">
                     <div class="level-left is-mobile">
                         <%= link_to tweeet, class: "level-item" do%>
@@ -29,6 +31,7 @@
                         <% end %>
                     </div>
                 </nav>
+                <% end %>
             </div>
         </article>
     </div>

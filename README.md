@@ -1,7 +1,7 @@
   # Twitter Clone
 
 ## About <a name = "About"></a>
-I clone twitter and mock some of it's functionality using Ruby on Rails and Bulma, In order to fully understand MVC, RestfulApi, and implement CRUD.
+I clone twitter and mock some of it's functionality using Ruby on Rails and Bulma, In order to fully understand MVC, RestfulApi, a healthy experiemce using Device gem and implement CRUD.
 
 ## 🔧 Built with<a name = "with"></a>
 

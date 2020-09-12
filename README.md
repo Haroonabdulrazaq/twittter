@@ -23,7 +23,7 @@ I clone twitter and mock some of it's functionality using Ruby on Rails and Bulm
 
 - Github: [@Haroonabdulrazaq](https://github.com/Haroonabdulrazaq)
 - Twitter: [@Hanq_o](https://twitter.com/Hanq_o)
-- Linkedin: [Haroonabdulrazaq](https://www.linkedin.com/in/haroon-abdulrazaq/)
+- Linkedin: [Haroonabdulrazaq](https://www.linkedin.com/in/haroonabdulrazaq/)
 
 
 ## 🤝 Contributing
